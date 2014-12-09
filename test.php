@@ -1,11 +1,18 @@
 ﻿<?php
 
+function b(){
+	return true;
+}
+
+function c(){
+	echo 'b';
+	echo 'c';
+}
 
 function a(){
 	echo 'a';
-	if(true){
-		echo 'b';
-		echo 'c';
+	if(b()){
+		c();
 	}
 	echo 'd';
 }
